@@ -4,3 +4,6 @@ Project 1:
   
 Project 2: 
   A background generator using HTML, CSS and JavaScript that changes the background of the webpage as you browse through the colors.
+  
+Project 3:
+  A transparent login page.
