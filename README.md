@@ -16,4 +16,4 @@ Project 3:
 
 Project 4:
 
-  A shopping list which adds the items by click or enter. Made using HTML, JavaScript.
+  A shopping list which adds the items by click or enter. Made using HTML, CSS and JavaScript.
