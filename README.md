@@ -12,3 +12,8 @@ Project 2:
 Project 3:
 
   A transparent login page using simple HTML and CSS.
+
+
+Project 4:
+
+  A shopping list which adds the items by click or enter. Made using HTML, JavaScript.
