@@ -1,0 +1,315 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 21px;
+}
+.logo img{
+    width: 55px;
+    height: 55px;
+    border: 2px solid azure;
+    border-radius: 35px;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+}
+
+.navList{
+    width: 90%;
+    display: flex;
+    align-items: center;
+}
+
+.navList li{
+    list-style: none;
+    padding: 25px 30px;
+    cursor: pointer;
+}
+
+.navList li:hover{
+    background-color: rgb(80, 80, 80);
+}
+
+.navList li a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+
+.rightNav{
+    width: 50%;
+    text-align: right;
+    padding: 0 23px;
+}
+
+#search{
+    padding: 5px;
+    font-size: 16px;
+    border: 3px solid gray;
+    border-radius: 9px;
+}
+
+.background{
+    background: rgba(0,0,0,0.7) url(../images/1.jpeg);
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.boxMain{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    color: aliceblue;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    max-width: 60%;
+    margin: auto;
+}
+
+.firstSection{
+    height: 95vh;
+    display: flex;
+    align-items: center;
+}
+
+.firstHalf{
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.secondHalf{
+    width: 25%;
+}
+
+.secondHalf img{
+    width:250px;
+    height: 250px;
+    border: 3px solid white;
+    border-radius: 200px;
+    display: block;
+    margin: auto;
+}
+.txt{
+    width: 100%;
+}
+
+.textBig{
+    font-size: 35px;
+    margin: 9px;
+}
+
+.textSmall{
+    font-size: 16px;
+    margin: 9px;
+}
+
+.btn{
+    padding: 8px 18px;
+    margin: 15px 3px;
+    border: 2px solid rgb(255, 0, 0);
+    border-radius: 9px;
+    font-size: 12px;
+    background:none;
+    color: beige;
+    cursor: pointer;
+}
+
+.btn-sm{
+    padding: 6px 15px;
+    vertical-align: middle;
+}
+
+.section{
+    /* height: 95vh; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    max-width: 75%;
+    margin: 25px auto;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.section .sectionSubTag{
+    padding-top: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.left{
+  flex-direction: row-reverse;  
+}
+
+.imageFluid{
+    width: 250px;
+    height: 250px;
+    border: 3px solid white;
+    border-radius: 30px;
+    display: block;
+    margin: auto;
+}
+
+.paras{
+    padding: 0 50px;
+}
+
+
+.contact{
+    background-color: bisque;
+    height: 84vh;
+}
+
+.center{
+    text-align: center;
+    padding-top: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 33px;
+}
+
+.form{
+    max-width: 30%;
+    margin: 33px auto;
+}
+
+.form input{
+    margin: 11px 0;
+    padding:9px 5px;
+    width: 100%;
+    font-size: 16px;
+    border: 2px solid gainsboro;
+    border-radius: 5px;
+}
+
+.btn-dark{
+    color: darkslategrey;
+    border-color: darkgray;
+    display: block;
+    margin: 23px auto;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.footerText{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: azure;
+    padding: 20px;
+}
+
+.burger{
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 15px;
+    display: none;
+}
+
+.line{
+    width: 23px;
+    background-color: white;
+    height: 3px;
+    margin: 3px 2px;
+}
+
+@media only screen and (max-width: 1140px){
+    .navbar{
+        height: 469px;
+        flex-direction: column;
+        transition: all 0.5s ease-out;
+    }
+    .navList{
+        flex-direction: column;
+    }
+    .rightNav{
+        text-align: center;
+    }
+    .hNav{
+        height: 62px;
+    }    
+    
+    #search{
+        width: 100%;
+    }
+    .burger{
+        display: block;
+    }
+    .txt{
+        margin: auto;
+        display: block;
+        width: 100%;
+    }
+    
+    .visibility{
+        opacity:0;
+    }
+
+    .boxMain{
+        flex-direction: column-reverse;
+        max-width: 100%;
+    }
+
+    .section{
+        flex-direction: column-reverse;
+        max-width: 100%;
+    }
+
+    .textSmall, .textBig, .btn{
+        text-align: center;
+    }
+
+    .paras{
+        padding: 0;
+    }
+
+    .logo img{
+        width: 35px;
+        height: 35px;
+        border: 2px solid azure;
+        border-radius: 15px;
+    }
+
+    .btn{
+        display: block;
+        margin: 5px auto;
+    }
+    
+}
+
+@media only screen and (max-width: 540px){
+.imageFluid{
+    width: 70px;
+    height: 70px;
+    border: 3px solid white;
+    border-radius: 5px;
+    display: block;
+    margin: auto;
+}
+
+.secondHalf img {
+    width: 70px;
+    height: 70px;
+    border: 3px solid white;
+    border-radius: 30px;
+    display: block;
+    margin: auto;
+}
+
+.textBig, .textSmall{
+    font-size: 0.7em;
+}
+}
